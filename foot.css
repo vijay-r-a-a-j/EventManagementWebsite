@@ -1,0 +1,77 @@
+.column {
+  float:left;
+  width:20%;
+  padding:20px;
+  color:white;
+  font-size: 12px;
+  text-align: left;
+}
+.column a{
+  color: white;
+  font-family: "roboto";
+  text-decoration: none;
+}
+.column p{
+  font-family:"roboto";
+}
+.column a:hover{
+   color: dodgerblue;
+}
+.fa{
+  float: right;
+}
+
+.copyright{
+  display:flex;
+  flex-basis: 50%;
+  width: 70%;
+  height: 40px;
+ background-color:#ff604f;
+}
+.copyright p{
+  float: right;
+  color: white;
+  font-family:"roboto";
+  position: relative;
+  left: 70%;
+  top: 20%;
+}
+.row{
+   float:left;
+   display:flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   width:100%;
+   margin-top: 10%;
+   background-color:#00002f;
+   background-image: linear-gradient(0deg,#4f000b,#00002f);
+}
+.row::after {
+  content:"";
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width: 800px)
+{ 
+  .copyright{
+    width: 100%;
+    display: flex;
+    flex-basis: 100%;
+      }
+      .copyright p{
+        float: left;
+        position: relative;
+        left: 2%;
+        font-size: 13px;
+      }
+      .fa{
+        float:right;
+        font-size: 12px;
+        position: relative;
+        left: 20%;
+        bottom: 10%;
+        display: block;
+        margin-right: 10px;
+      }
+}

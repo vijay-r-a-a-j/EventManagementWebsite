@@ -1,0 +1,143 @@
+.mySlides {display: none}
+img {vertical-align: middle;
+   height:600px;
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin-top:auto;
+}
+.mySlides img{
+	width: 100%;
+	height:600px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-left:10%;
+  width:auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border-radius: 50%;
+  background-color: white;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: 10%;
+  border-radius: 50%;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.main1{
+	width: 100%;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.desktop{
+	width: 60%;
+	height: 150px;
+	border-radius:5px;
+	background-image: url("desktop.png");
+	background-size: 100% 100%;
+}
+.a{
+  margin-bottom:15%;
+  font-size: 15px;
+}
+.pa{
+	text-align: center;
+	width: 25%;
+	color: white;
+	font-size: 40px;
+	margin-top:15px;
+	float:left;
+}
+.count{
+	float:right;
+}
+@media only screen and (max-width: 800px){
+	#main1{
+		width:70%;
+		height:350px;
+		border-radius: 10px;
+		background-color:#00002f ;
+		background-image: linear-gradient(180deg,#91000b,#00002f);
+		display:block;
+		align-items: center;
+	}
+	.pa{
+		width: 100%;
+        color: white;
+		font-size:30px;
+		border: none;
+		margin-left: -5px;
+		margin-top:6%;
+		padding: 1px;
+		float: left;
+		display: block;
+	}
+	span{
+		margin-left: 5%;
+		font-size: 10px;
+		display: block;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.slideshow-container{
+        padding-top: 15%;
+	}
+	.mySlides img{
+		width: 100%;
+		height: auto;
+	}
+	.prev,.next{
+		position:absolute ;
+		top: 65%;
+		font-size: 15px;
+		padding: 10px;
+	} 
+	.desktop{
+		width: 100%;
+		height: 90px;
+		margin-top: 5%;
+	}
+	.pa{
+		width: 25%;
+		position:relative;
+		left:5% ;
+		margin-top: 15px;
+		font-size: 20px;
+	}
+	.a{
+		font-size:8px ;
+	}
+	.count{
+		position:relative;
+		top: 3%;
+		font-size: 20px;
+	}
+}
+
